@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package ProtobufRubyExample.Proto;
+
+message RequestPb {
+    int64 id = 1;
+    string message = 2;
+}
+
+message ResponsePb {
+    int64 id = 1;
+    string status = 2;
+}

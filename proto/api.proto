@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "messages.proto";
+
+package ProtobufRubyExample.Proto;
+
+// An RPC service for ProtobufRubyExample.
+service Api {
+
+    // A sample RPC method
+    //
+    // Accepts a RequestPb.
+    // Returns a ResponsePb.
+    rpc SomeMethod(ProtobufRubyExample.Proto.RequestPb) returns (ProtobufRubyExample.Proto.ResponsePb) {}
+}
